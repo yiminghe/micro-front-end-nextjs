@@ -1,0 +1,24 @@
+{
+  "name": "mfe-nextjs",
+  "private": true,
+  "devDependencies": {
+    "rome": "11.x",
+    "turbo": "1.x"
+  },
+  "manypkg": {
+    "ignoredRules": [
+      "INTERNAL_MISMATCH"
+    ]
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "postinstall": "cp scripts/git-hooks/pre-commit .git/hooks/pre-commit",
+    "format": "cd scripts && npm run format",
+    "format:staged": "cd scripts && npm run format:staged",
+    "check-pkg": "cd scripts && npm run check-pkg",
+    "fix-pkg": "cd scripts && npm run fix-pkg",
+    "lint": "turbo run lint",
+    "build": "turbo run build",
+    "clean": "turbo run clean"
+  }
+}

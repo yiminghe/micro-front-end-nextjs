@@ -1,0 +1,7 @@
+{
+  "name": "next-adapter",
+  "version": "1.0.0",
+  "dependencies": {
+    "next": "13.x"
+  }
+}
