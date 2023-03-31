@@ -10,6 +10,7 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "lint": "tsc --noEmit && rome check src",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

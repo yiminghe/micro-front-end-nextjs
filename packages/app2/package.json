@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "lint": "tsc --noEmit && rome check src",
-    "dev": "next dev -p 3001",
+    "dev": "next dev -p 3002",
     "build": "next build && next export",
     "start": "next start"
   },

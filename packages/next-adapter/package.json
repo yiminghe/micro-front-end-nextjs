@@ -1,7 +1,11 @@
 {
   "name": "next-adapter",
+  "private":true,
   "version": "1.0.0",
   "dependencies": {
     "next": "13.x"
+  },
+  "scripts": {
+    "lint": "rome check lib"
   }
 }

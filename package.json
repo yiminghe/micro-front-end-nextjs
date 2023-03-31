@@ -20,5 +20,10 @@
     "lint": "turbo run lint",
     "build": "turbo run build",
     "clean": "turbo run clean"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@garfish/router@1.14.3": "patches/@garfish__router@1.14.3.patch"
+    }
   }
 }

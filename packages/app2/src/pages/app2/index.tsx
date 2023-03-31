@@ -2,11 +2,11 @@ import Link from 'next/link';
 export default function () {
   return (
     <>
-      <h2>app1 首页</h2>
-      <Link href="./app1/detail">app1 详情页</Link>
+      <h2>app2 首页</h2>
+      <Link href="./app2/detail">详情页</Link>
       <br/> <br/>
       <div>
-      <Link href="/app2">go to app2</Link>
+      <Link href="/app1">go to app1</Link>
       </div>
     </>
   );

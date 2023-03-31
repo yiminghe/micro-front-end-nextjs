@@ -1,4 +1,5 @@
 import Garfish from 'garfish';
+
 Garfish.run({
   basename: '/',
   domGetter: '#subApp',
@@ -6,12 +7,16 @@ Garfish.run({
     {
       name: 'app1',
       activeWhen: '/app1',
-      entry: 'http://localhost:3001/app1', // html入口
+      entry() {
+        return 'http://localhost:3001' + location.pathname + location.search;
+      },
     },
-    // {
-    //   name: 'app2',
-    //   activeWhen: '/app2',
-    //   entry: 'http://localhost:3002', // html入口
-    // },
-  ],
+    {
+      name: 'app2',
+      activeWhen: '/app2',
+      entry() {
+        return 'http://localhost:3002' + location.pathname + location.search;
+      },
+    },
+  ] as any,
 });
