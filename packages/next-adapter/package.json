@@ -1,6 +1,6 @@
 {
   "name": "next-adapter",
-  "private":true,
+  "private": true,
   "version": "1.0.0",
   "dependencies": {
     "next": "13.x"

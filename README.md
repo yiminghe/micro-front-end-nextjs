@@ -1,13 +1,27 @@
 # micro-front-end-nextjs
 
-micro front end application using garfish and nextjs( prerender supported )
+micro front end application using garfish and nextjs(with some patches)
 
-## garfish
+## demo
 
-- router
-- fetch
-- sandbox (js and  css)
+```
+pnpm install
+pnpm dev
+```
 
-## nextjs
+main app: http://localhost:3000/
 
+nextjs app1: http://localhost:3001/app1
+
+nextjs app2: http://localhost:3002/app2
+## tech stack
+### garfish
+
+- cross app router
+- fetch sub app entry html
+- sandbox
+
+### nextjs
+
+- app router
 - ssg/ssr
