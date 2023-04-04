@@ -11,7 +11,7 @@ export default function () {
   }, []);
   return (
     <>
-      <h2>app1 首页</h2>
+      <h2 className="title">app1 首页</h2>
       <div>
         <Link href="./app1/detail">app1 详情页</Link>
       </div>
