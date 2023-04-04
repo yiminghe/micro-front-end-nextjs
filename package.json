@@ -23,7 +23,6 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "@garfish/router@1.14.3": "patches/@garfish__router@1.14.3.patch",
       "next@13.2.4": "patches/next@13.2.4.patch"
     }
   }

@@ -1,9 +1,6 @@
 lockfileVersion: '6.0'
 
 patchedDependencies:
-  '@garfish/router@1.14.3':
-    hash: 22onbf4eqgdnqg3c3ds3wchheq
-    path: patches/@garfish__router@1.14.3.patch
   next@13.2.4:
     hash: atn3dxkphakyaim723lzzajukm
     path: patches/next@13.2.4.patch
@@ -1757,7 +1754,7 @@ packages:
       - supports-color
     dev: false
 
-  /@garfish/router@1.14.3(patch_hash=22onbf4eqgdnqg3c3ds3wchheq):
+  /@garfish/router@1.14.3:
     resolution: {integrity: sha512-oiVQ796T0U55BhR/hXa1mTmLsCej9Xno0vdm2M2123XKhKzpPUid8BYFuWOZ9zsG10ullKUenIBuKu7jE0s+Jg==}
     dependencies:
       '@garfish/core': 1.14.3
@@ -1765,7 +1762,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
-    patched: true
 
   /@garfish/utils@1.14.3:
     resolution: {integrity: sha512-p6KxcJLJAcgwagzltaBH46PfWw0hI/v8Sr7zzKvGvFA7gyGR6FvKqbxxTDRotkncgKJ16jfyDSPJ1d9Hq6tnmw==}
@@ -5566,7 +5562,7 @@ packages:
       '@garfish/browser-snapshot': 1.14.3
       '@garfish/browser-vm': 1.14.3
       '@garfish/core': 1.14.3
-      '@garfish/router': 1.14.3(patch_hash=22onbf4eqgdnqg3c3ds3wchheq)
+      '@garfish/router': 1.14.3
       '@garfish/utils': 1.14.3
     transitivePeerDependencies:
       - supports-color
