@@ -34,6 +34,7 @@ Garfish.run({
   basename: '/',
   domGetter: '#subApp',
   apps,
+  disablePreloadApp: true,
   beforeLoad(appInfo: any) {
     // any??
     if (appInfo.entryFn) {
