@@ -24,4 +24,4 @@ nextjs app2: http://localhost:3002/app2
 ### nextjs
 
 - app router
-- ssg/ssr
+- ssg/ssr （currently only works for ssg because of entry cache）
