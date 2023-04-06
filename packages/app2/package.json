@@ -4,7 +4,7 @@
   "scripts": {
     "lint": "tsc --noEmit && rome check src",
     "dev": "next dev -p 3002",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
