@@ -4,12 +4,22 @@ if (location.pathname === '/') {
   location.href = '/app1';
 }
 
+let app1Host = 'http://localhost:3001';
+if (process.env.NODE_ENV === 'production') {
+  app1Host = 'https://micro-front-end-nextjs-app1.vercel.app';
+}
+
+let app2Host = 'http://localhost:3002';
+if (process.env.NODE_ENV === 'production') {
+  app2Host = 'https://micro-front-end-nextjs-app2.vercel.app';
+}
+
 const entryInfo: Record<string, () => string> = {
   app1() {
-    return `http://localhost:3001${location.pathname}${location.search}`;
+    return `${app1Host}${location.pathname}${location.search}`;
   },
   app2() {
-    return `http://localhost:3002${location.pathname}${location.search}`;
+    return `${app2Host}${location.pathname}${location.search}`;
   },
 };
 

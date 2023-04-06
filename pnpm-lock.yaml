@@ -74,6 +74,9 @@ importers:
 
   packages/main:
     dependencies:
+      '@types/node':
+        specifier: 18.x
+        version: 18.15.11
       garfish:
         specifier: 1.x
         version: 1.14.3
