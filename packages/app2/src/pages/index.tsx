@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import OuterLink from 'next-adapter/lib/OuterLink';
+
 export default function () {
   const [show, setShow] = useState(true);
   useEffect(() => {
@@ -13,16 +15,16 @@ export default function () {
     <>
       <h2 className="title">app2 首页</h2>
       <div>
-        <Link href="./app2/detail">app2 详情页</Link>
+        <Link href="/detail">app2 详情页</Link>
       </div>
       <br />
       <div style={{ display: show ? 'block' : 'none' }}>
         <div>
-          <Link href="/app1">go to app1</Link>
+          <OuterLink href="/app1">go to app1</OuterLink>
         </div>
         <br />{' '}
         <div>
-          <Link href="/app1/detail">go to app1 detail</Link>
+          <OuterLink href="/app1/detail">go to app1 detail</OuterLink>
         </div>
       </div>
     </>

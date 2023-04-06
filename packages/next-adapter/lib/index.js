@@ -18,8 +18,7 @@ export default function singleSpaNext() {
     },
     async unmount() {
       document.body.style.display = '';
-      const root = getReactRoot();
-      root.unmount();
+      getReactRoot().unmount();
     },
   };
 }

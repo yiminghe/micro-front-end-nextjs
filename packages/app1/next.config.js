@@ -1,7 +1,8 @@
 const path = require('path');
 
 module.exports = {
-  assetPrefix: 'http://localhost:3001/',
+  basePath: '/app1',
+  assetPrefix: 'http://localhost:3001/app1',
   webpack(config, { buildId, dev, isServer, defaultLoaders, webpack }) {
     if (!isServer) {
       const entry = config.entry;

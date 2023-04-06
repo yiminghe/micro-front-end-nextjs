@@ -2,8 +2,10 @@
   "name": "next-adapter",
   "private": true,
   "version": "1.0.0",
-  "dependencies": {
-    "next": "13.2.4"
+  "devDependencies": {
+    "next": "13.2.4",
+    "react": "18.x",
+    "react-dom": "18.x"
   },
   "scripts": {
     "lint": "rome check lib"

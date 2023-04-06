@@ -1,6 +1,6 @@
 # micro-front-end-nextjs
 
-micro front end application using garfish and nextjs(with some patches)
+micro front end application using garfish and nextjs(with a single line patch)
 
 ## demo
 
