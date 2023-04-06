@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  productionBrowserSourceMaps: true,
+  // productionBrowserSourceMaps: true,
   basePath: '/app1',
   //assetPrefix: 'http://localhost:3001/app1',
   webpack(config, { buildId, dev, isServer, defaultLoaders, webpack }) {

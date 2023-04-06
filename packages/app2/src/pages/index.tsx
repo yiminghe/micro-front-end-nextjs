@@ -5,9 +5,9 @@ import OuterLink from 'next-adapter/lib/OuterLink';
 export default function () {
   const [show, setShow] = useState(true);
   useEffect(() => {
-    if (location.port !== '3000') {
-      setShow(false);
-    }
+    // if (location.port !== '3000') {
+    //   setShow(false);
+    // }
     console.log('app2 index mount');
     return () => console.log('app2 index unmount');
   }, []);
