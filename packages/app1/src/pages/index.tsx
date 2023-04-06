@@ -7,7 +7,7 @@ export default function () {
   useEffect(() => {
     if (
       location.port !== '3000' &&
-      location.host !== 'micro-front-end-nextjs-app1.vercel.app1'
+      location.host !== 'micro-front-end-nextjs-main.vercel.app'
     ) {
       setShow(false);
     }
