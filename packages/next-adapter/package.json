@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "dependencies": {
-    "next": "13.x"
+    "next": "13.2.4"
   },
   "scripts": {
     "lint": "rome check lib"

@@ -19,7 +19,7 @@ importers:
   packages/app1:
     dependencies:
       next:
-        specifier: 13.x
+        specifier: 13.2.4
         version: 13.2.4(patch_hash=atn3dxkphakyaim723lzzajukm)(react-dom@18.2.0)(react@18.2.0)
       next-adapter:
         specifier: workspace:*
@@ -47,7 +47,7 @@ importers:
   packages/app2:
     dependencies:
       next:
-        specifier: 13.x
+        specifier: 13.2.4
         version: 13.2.4(patch_hash=atn3dxkphakyaim723lzzajukm)(react-dom@18.2.0)(react@18.2.0)
       next-adapter:
         specifier: workspace:*
@@ -93,7 +93,7 @@ importers:
   packages/next-adapter:
     dependencies:
       next:
-        specifier: 13.x
+        specifier: 13.2.4
         version: 13.2.4(patch_hash=atn3dxkphakyaim723lzzajukm)(react-dom@18.2.0)(react@18.2.0)
 
   scripts:
