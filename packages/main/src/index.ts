@@ -4,14 +4,26 @@ if (location.pathname === '/') {
   location.href = '/app1';
 }
 
+let previews: string[] = [];
+const previewData = new URL(location.href).searchParams.get('previews');
+if (previewData) {
+  previews = previewData.split(',');
+}
+
+previews = previews.map((p) => `-${p}-yiminghe`);
+
 let app1Host = 'http://localhost:3001';
 if (process.env.NODE_ENV === 'production') {
-  app1Host = 'https://micro-front-end-nextjs-app1.vercel.app';
+  app1Host = `https://micro-front-end-nextjs-app1${
+    previews[0] || ''
+  }.vercel.app`;
 }
 
 let app2Host = 'http://localhost:3002';
 if (process.env.NODE_ENV === 'production') {
-  app2Host = 'https://micro-front-end-nextjs-app2.vercel.app';
+  app2Host = `https://micro-front-end-nextjs-app2${
+    previews[1] || ''
+  }.vercel.app`;
 }
 
 const entryInfo: Record<string, () => string> = {
