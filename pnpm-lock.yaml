@@ -2,7 +2,7 @@ lockfileVersion: '6.0'
 
 patchedDependencies:
   next@13.2.4:
-    hash: tyhlk5bhnhsupdygfz4zbeugla
+    hash: qk6afryrhejh4fs67n72qsibae
     path: patches/next@13.2.4.patch
 
 importers:
@@ -20,7 +20,7 @@ importers:
     dependencies:
       next:
         specifier: 13.2.4
-        version: 13.2.4(patch_hash=tyhlk5bhnhsupdygfz4zbeugla)(react-dom@18.2.0)(react@18.2.0)
+        version: 13.2.4(patch_hash=qk6afryrhejh4fs67n72qsibae)(react-dom@18.2.0)(react@18.2.0)
       next-adapter:
         specifier: workspace:*
         version: link:../next-adapter
@@ -48,7 +48,7 @@ importers:
     dependencies:
       next:
         specifier: 13.2.4
-        version: 13.2.4(patch_hash=tyhlk5bhnhsupdygfz4zbeugla)(react-dom@18.2.0)(react@18.2.0)
+        version: 13.2.4(patch_hash=qk6afryrhejh4fs67n72qsibae)(react-dom@18.2.0)(react@18.2.0)
       next-adapter:
         specifier: workspace:*
         version: link:../next-adapter
@@ -97,7 +97,7 @@ importers:
     devDependencies:
       next:
         specifier: 13.2.4
-        version: 13.2.4(patch_hash=tyhlk5bhnhsupdygfz4zbeugla)(react-dom@18.2.0)(react@18.2.0)
+        version: 13.2.4(patch_hash=qk6afryrhejh4fs67n72qsibae)(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: 18.x
         version: 18.2.0
@@ -7409,7 +7409,7 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: false
 
-  /next@13.2.4(patch_hash=tyhlk5bhnhsupdygfz4zbeugla)(react-dom@18.2.0)(react@18.2.0):
+  /next@13.2.4(patch_hash=qk6afryrhejh4fs67n72qsibae)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-g1I30317cThkEpvzfXujf0O4wtaQHtDCLhlivwlTJ885Ld+eOgcz7r3TGQzeU+cSRoNHtD8tsJgzxVdYojFssw==}
     engines: {node: '>=14.6.0'}
     hasBin: true

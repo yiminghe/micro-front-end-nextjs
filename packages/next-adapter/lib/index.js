@@ -1,4 +1,4 @@
-import { initialize, hydrate, getReactRoot } from 'next/dist/client';
+import { initialize, hydrate, reactRoot } from 'next/dist/client';
 
 export default function singleSpaNext() {
   let promise;
@@ -18,7 +18,7 @@ export default function singleSpaNext() {
     },
     async unmount() {
       document.body.style.display = '';
-      getReactRoot().unmount();
+      reactRoot.unmount();
     },
   };
 }

@@ -6,7 +6,7 @@ index 2848e4da7a6b0f5fdea209ce999dec5c47206f5f..628200538802f0daa595ee0e0e3052e5
      return null;
  }
  let reactRoot = null;
-+exports.getReactRoot = () => reactRoot;
++Object.defineProperty(exports,'reactRoot',{ get(){ return reactRoot; }});
  // On initial render a hydrate should always happen
  let shouldHydrate = true;
  function clearMarks() {
