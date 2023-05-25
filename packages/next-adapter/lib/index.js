@@ -1,20 +1,11 @@
-import { initialize, hydrate, reactRoot } from 'next/dist/client';
+import { reactRoot } from 'next/dist/client/app-index';
 
 export default function singleSpaNext() {
   let promise;
   return {
-    async bootstrap() {
-      if (promise) {
-        return promise;
-      }
-      promise = initialize({
-        webpackHMR: { onUnrecoverableError() {} },
-      });
-      await promise;
-    },
+    async bootstrap() {},
     async mount() {
       document.body.style.display = 'block';
-      await hydrate();
     },
     async unmount() {
       document.body.style.display = '';

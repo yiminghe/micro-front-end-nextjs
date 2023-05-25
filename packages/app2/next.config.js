@@ -2,9 +2,13 @@ const path = require('path');
 
 module.exports = {
   basePath: '/app2',
+  reactStrictMode: false,
+  experimental: {
+    appDir: true,
+  },
   //assetPrefix: 'http://localhost:3002/app2',
   webpack(config, { buildId, dev, isServer, defaultLoaders, webpack }) {
-    if (!isServer) {
+    if (false && !isServer) {
       const entry = config.entry;
       config.entry = async () => {
         const entryInfo = await entry();

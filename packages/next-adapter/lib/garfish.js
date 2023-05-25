@@ -20,8 +20,8 @@ if (
   __GARFISH_EXPORTS__.provider = provider;
 } else {
   if (process.env.NODE_ENV === 'production') {
-    require('next/dist/client/next');
+    require('next/dist/client/app-next');
   } else {
-    require('next/dist/client/next-dev');
+    require('next/dist/client/app-next-dev');
   }
 }
